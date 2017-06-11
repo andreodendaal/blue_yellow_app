@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blue Yellow</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Bootstrap -->
+    <link href="/static/bower_components/bootstrap-css/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link href="/static/css/theme.css?cacheId=${build_cache_id('/static/css/theme.css')}" rel="stylesheet">
+    <link href="/static/css/site.css?cacheid=${build_cache_id('/static/css/site.css')}" rel="stylesheet">
+</head>
+
+<body>
+  <h1 style="text-align:center;"><a href="/">Design Foundations: CSS Box Model</a></h1>
+    <div class="content">
+        <div style="text-align: center;">
+        <input class="form-control" type="text" id="margin" style="width: 120px; display: inline-block;"
+               placeholder="margin (px)">
+        <input class="form-control" type="text" id="padding" style="width: 120px; display: inline-block;"
+               placeholder="padding (px)">
+            <input class="form-control" type="text" id="border" style="width: 120px; display: inline-block;"
+               placeholder="border (px)">
+        <button class="btn btn-success">Set values</button>
+    </div>
+    <hr>
+    <br>
+        <div class="test_content">
+
+            <div class="outside">
+                <div class="inside">
+                    <div class="contained">Content!</div>
+                </div>
+            </div>
+            <br />
+            <div class="msg" style="text-align: center"></div>
+
+        </div>
+    </div>
+
+<script src="/static/bower_components/bootstrap-css/css/bootstrap.css"></script>
+<script src="/static/bower_components/jquery/src/jquery.js"></script>
+
+<script src="/static/js/box.js?cacheId=${build_cache_id('/static/js/box.js')}"></script>
+</body>
+</html>
